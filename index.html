@@ -17,7 +17,7 @@
     --red-bright: #c0392b; --pink: #e8879a; --gold: #d4af6a;
     --white: #fff5f5; --star: rgba(255,200,180,0.8);
   }
-  html, body { width:100%;height:100%;overflow:hidden;background:var(--red-dark);font-family:'Cormorant Garamond',serif;color:var(--white);cursor:default; }
+  html, body { width:100%;height:100%;overflow:hidden;overflow-x:hidden;background:var(--red-dark);font-family:'Cormorant Garamond',serif;color:var(--white);cursor:default; }
   button,
 a,
 .photo-card,
@@ -113,11 +113,11 @@ a:focus-visible {
 }
 
 .book-left.open{
-    transform:translateX(-100%);
+    transform:translate3d(-100%,0,0);
 }
 
 .book-right.open{
-    transform:translateX(100%);
+    transform:translate3d(100%,0,0);
 }
 #door-line{
     position:fixed;

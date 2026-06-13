@@ -138,6 +138,7 @@ a:focus-visible {
     height:100%;
 
     transform:translateX(-50%);
+    display:none !important;
 
     background:
     linear-gradient(
@@ -984,12 +985,12 @@ void left.offsetWidth;
 
     left.style.opacity = "1";
     right.style.opacity = "1";
-    line.style.opacity = "1";
+    
 
     left.classList.add('open');
     right.classList.add('open');
 
-    line.style.opacity = "0";
+    
 
     setTimeout(()=>{
         callback();
